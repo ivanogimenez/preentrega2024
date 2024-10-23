@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <style>
+        body
+        {
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* maqueta en grid */
+        .container
+        {
+            display: grid;
+            grid-template-rows: auto auto 1fr auto;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "header"
+                "nav"
+                "main"
+                "footer";
+            height: 100vh;
+        }
+
+        header
+        {
+            grid-area: header;
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            grid-area: nav;
+            background-color: #333;
+            width: 100%; 
+            height: 50px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;         
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        main {
+            grid-area: main;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        /* tabla */
+        table{
+            width: 70%;
+            margin: 20px auto;
+        }
+
+        table th, table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        table td img {
+            width: 50px;
+            height: 50px;
+        }
+
+        table td button {
+            padding: 8px 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer; /*cambia el formato del cursor*/
+        }
+        table td button:hover{
+            background-color:lightgreen;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+
+    </style>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Maquetado Basico</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Clientes</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+            </nav>
+            <main>
+                <h2>Productos</h2>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>Producto</th>
+                            <th>imagen</th>
+                            <th>Precio</th>
+                            <th>Accion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10</td>
+                            <td>Celular Motorola</td>
+                            <td><img src="https://picsum.photos/50?randon=1"></td>
+                            <td>305000</td>
+                            <td><button>Ingresar</button></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Celular Samsung</td>
+                            <td><img src="https://picsum.photos/50?randon=2"></td>
+                            <td>305000</td>
+                            <td><button>Ingresar</button></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Celular LG</td>
+                            <td><img src="https://picsum.photos/50?randon=3"></td>
+                            <td>305000</td>
+                            <td><button>Ingresar</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
+            <footer>
+                <p>Talente 2024 - Pre Entrega</p>
+            </footer>
+        </div>    
+    </body>
+</html>
