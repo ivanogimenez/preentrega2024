@@ -4,12 +4,12 @@
         <title>A la caja</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="icon" href="favicon_io/favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="icon" href="favicon_io/favicon.ico">    
     </head>
 
     <body>
@@ -27,20 +27,29 @@
                 </ul>
             </nav>
             <main>
-                <div class="imagen-de-fondo">
-                    <div class="content">
-                        <h2>Bienvenido</h2>
+                <div class="background-image"></div>
+                <div class="content">
+                    <h2>Contacto</h2>
+                    <form class="formulario" action="https://formspree.io/f/manynnjw" method="POST">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" required>
                         <br>
-                        <p>¡A Nuestra tienda en linea de juegos de mesa! Aquie encontrarás una amplia seleccion de juegos para todos los gustos, desde los clásicos que todos amamos hasta las ultimas novedades del mercado. Nuestro objetivo es ofrecerte una experiencia de compra facil y emocionante, donde puedas descubrir, explorar y elegir el juego perfecto para cada ocasión.
-                            <br> Ya que estés buscando un juego de estrategia para una noche de competencia, un juego familiar para compartir risas, o un dessafio unico para dos personas, tenemos algo especial para ti. Nos apasiona el mundo de los juegos de mesa y el entretenimieto, y trabajamos continuamente para ofrecerte productos de calidad y una experiencia de compra que superes tus espectativas.
+                        <label for="mail">Correo Electrónico</label>
+                        <input type="mail" id="email" name="email" required>
                         <br>
-                        ¡Preparate para sumergirte en un mundo de diversion y emoción en cada partida!</p>
-                    </div>
+                        <label for="subject">Asunto</label>
+                        <input type="text" id="subjet" name="subject">
+                        <br>
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <br> 
+                        <button type="submit">Enviar Mensaje</button>
+                    </form>
                 </div>
             </main>
+        
             <footer>
-                <p>Talente 2024 - Pre Entrega</p>
+                <p>Talento - Tech 2024</p>
             </footer>
-        </div>    
-    </body>
-</html>
+        </body>
+        </html>
